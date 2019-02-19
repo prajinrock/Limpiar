@@ -1,0 +1,27 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	background-color: #fff;
+}
+.navbar{
+	border: 0px;
+	box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+}
+.navbar-default .navbar-nav>li>a{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 13px;
+	color: #0e0e5d;
+	letter-spacing: 1px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #0e0e5d;
+	background-color: transparent;
+	box-shadow: 0px -2px 0px #0e0e5d inset;
+}
+.navbar-nav>li>a{
+	
+}
