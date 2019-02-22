@@ -480,6 +480,9 @@ hr{
 .headerBlok div img{
  width: 100%;
 }
+.cols2{
+	column-count: 2;
+}
 @media only screen and (max-width: 1366px){
 	.lumina_contain .container-fluid{
 		padding: 0px 10%;
@@ -528,10 +531,15 @@ hr{
 	}
 	.subSection{
 		flex-direction: column;
+		padding: 0px 20px;
 	}
 	.subTextSection{
 		margin: 0px;
-		padding: 10px 20px;
+		padding: 0px 0px;
+		width: 100%;
+	}
+	.subTextSection h2{
+		font-size: 20px;
 	}
 	.highlightSection{
 		flex-direction: column;
@@ -541,6 +549,10 @@ hr{
 	.highlightSection > div{
 		width: 100%;
 		padding: 20px;
+	}
+	.collageBox{
+		width: 100%;
+		padding-bottom: 20px;
 	}
 	.highContent p{
 		display: none;
@@ -600,5 +612,8 @@ hr{
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
 		margin-left: 0px;
 		margin-right: 0px;
+	}
+	.addressLogo{
+		padding-top: 20px;
 	}
 }
