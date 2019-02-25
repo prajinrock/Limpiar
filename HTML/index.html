@@ -186,21 +186,24 @@ quality expectations</p>
           <h4>Dubai</h4>
         </div>
         <div>
-          <h3>The Greens Apartments</h3>
+          <h3>Pullman Hotel</h3>
+          <h4>Deira City Centre, Dubai</h4>
+        </div>
+        <div>
+          <h3>Carrefour</h3>
+          <h4>Bur Dubai, Dubai</h4>
+        </div>
+        <div>
+          <h3>Jebel Ali Airport</h3>
           <h4>Dubai</h4>
         </div>
         <div>
-          <h3>The Greens Apartments</h3>
-          <h4>Dubai</h4>
+          <h3>Al Bateen Palace (Phase 1)</h3>
+          <h4>Abu Dhabi</h4>
         </div>
-        <div>
-          <h3>The Greens Apartments</h3>
-          <h4>Dubai</h4>
-        </div>
-        <div>
-          <h3>The Greens Apartments</h3>
-          <h4>Dubai</h4>
-        </div>
+      </div>
+      <div class="viewAlldiv">
+        <a href="">View All <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
       </div>
     </div>
     <div class="footerDiv flexBox">
@@ -253,6 +256,9 @@ quality expectations</p>
     <div class="mainFooter">
       <span>&copy; 2019 Lumina Electrical Cont. All rights reserved</span>
     </div>
+    <div id="back2Top" class="scrollTop">
+      <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span>TOP</span>
+    </div>
     
 <!-- loader -->
 <div class="loader_div" id="preloadr">
@@ -267,6 +273,23 @@ quality expectations</p>
 <script type="text/javascript"> 
   $(window).load(function(){
     $("#preloadr").hide();
+  });
+  //Scroll Top
+  $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if (height > 100) {
+          $('#back2Top').fadeIn();
+      } else {
+          $('#back2Top').fadeOut();
+      }
+  });
+  $(document).ready(function() {
+      $("#back2Top").click(function(event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "fast");
+          return false;
+      });
+
   });
 </script>
 </body>
