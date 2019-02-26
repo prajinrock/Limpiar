@@ -47,17 +47,17 @@ body{
 .carousel-caption{
 	text-align: left;
 	right: 50%;
-	background-color: rgba(255,255,255,.3);
+	background-color: rgba(0,0,0,.5);
 	padding: 10px 20px;
 	bottom: 60px;
 }
 .carousel-caption h1{
-	color: #424242;
+	color: #fff;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
 }
 .carousel-caption p{
-	color: #424242;
+	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
@@ -94,7 +94,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background-color: transparent;
 	border:2px solid #2d97c0;
-	color: #424242;
+	color: #fff;
 	border-radius: 20px;
 	padding:10px 20px;
 	font-size: 14px;
@@ -437,6 +437,27 @@ body{
 	background-image:url(../images/bg_foot.jpg);
 	background-size: 100%;
 }
+.staticBanner2{
+	width: 100%;
+	position: relative;
+	background-image:url(../images/about_banner.jpg);
+	background-size: 100%;
+	background-position: center;
+}
+.staticBanner3{
+	width: 100%;
+	position: relative;
+	background-image:url(../images/project_banner.jpg);
+	background-size: 100%;
+	background-position: 0px -100px;
+}
+.staticBanner4{
+	width: 100%;
+	position: relative;
+	background-image:url(../images/banner_contact.jpg);
+	background-size: 100%;
+	background-position: 0px -100px;
+}
 .staticBanner > img{
 	width: 100%;
 }
@@ -444,7 +465,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
 	color: #fff;
-	padding: 100px 0px;
+	padding: 150px 0px;
 	font-weight: 600;
 	text-align: center;
 	text-shadow: 1px 1px 10px rgba(0,0,0,.7);

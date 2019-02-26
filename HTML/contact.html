@@ -31,9 +31,9 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Projects</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trading <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -47,14 +47,14 @@
                 </ul>
               </li>
               <li><a href="#">Clients</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
             
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-      <div class="staticBanner1">
+      <div class="staticBanner4">
         <div class="innerTitle">CONTACT US</div>
       </div>
       <div class="container innerContent">
@@ -104,34 +104,34 @@
       <div class="service_links">
         <h1>Services</h1>
         <ul>
-          <li><a href="#">BMS Services</a></li>
-          <li><a href="#">CCTV Services</a></li>
-          <li><a href="#">Fire Alarm Services</a></li>
-          <li><a href="#">Central Battery System</a></li>
-          <li><a href="#">Energy Management System</a></li>
-          <li><a href="#">Manpower Contracts</a></li>
+          <li><a href="projects.html#sec_bms">BMS Services</a></li>
+          <li><a href="projects.html#sec_cctv">CCTV Services</a></li>
+          <li><a href="projects.html#sec_fire">Fire Alarm Services</a></li>
+          <li><a href="projects.html#sec_battery">Central Battery System</a></li>
+          <li><a href="projects.html#sec_energy">Energy Management System</a></li>
+          <li><a href="projects.html#sec_manpower">Manpower Contracts</a></li>
         </ul>
       </div>
       <div class="quick_links">
         <h1>Quick Links</h1>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="#">Trading</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="other_links">
         <h1>Other Links</h1>
         <ul>
-          <li><a href="#">BMS Services</a></li>
-          <li><a href="#">CCTV Services</a></li>
-          <li><a href="#">Fire Alarm Services</a></li>
-          <li><a href="#">Central Battery System</a></li>
-          <li><a href="#">Energy Management System</a></li>
-          <li><a href="#">Manpower Contracts</a></li>
+          <li><a href="about.html">Vision</a></li>
+          <li><a href="about.html">Mission</a></li>
+          <li><a href="projects_executed.html">Recent Projects</a></li>
+          <li><a href="about.html">Quality</a></li>
+          <li><a href="about.html">Turnaround Time</a></li>
+          <li><a href="about.html">Price</a></li>
         </ul>
       </div>
       <div class="address_footer">
@@ -150,6 +150,9 @@
     <div class="mainFooter">
       <span>&copy; 2019 Lumina Electrical Cont. All rights reserved</span>
     </div>
+    <div id="back2Top" class="scrollTop">
+      <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><span>TOP</span>
+    </div>
     
 <!-- loader -->
 <div class="loader_div" id="preloadr">
@@ -164,6 +167,23 @@
 <script type="text/javascript"> 
   $(window).load(function(){
     $("#preloadr").hide();
+  });
+  //Scroll Top
+  $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if (height > 100) {
+          $('#back2Top').fadeIn();
+      } else {
+          $('#back2Top').fadeOut();
+      }
+  });
+  $(document).ready(function() {
+      $("#back2Top").click(function(event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "fast");
+          return false;
+      });
+
   });
 </script>
 </body>
