@@ -116,7 +116,7 @@ body{
 	right: 0px;
 	background-color: #ccc;
 	/*display: none;*/
-	z-index: 1001;
+	z-index: 1050;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -458,6 +458,20 @@ body{
 	background-size: 100%;
 	background-position: 0px -100px;
 }
+.staticBanner5{
+	width: 100%;
+	position: relative;
+	background-image:url(../images/banner_trading.jpg);
+	background-size: 100%;
+	background-position: 0px -100px;
+}
+.staticBanner6{
+	width: 100%;
+	position: relative;
+	background-image:url(../images/banner_clients.jpg);
+	background-size: 100%;
+	background-position: 0px -100px;
+}
 .staticBanner > img{
 	width: 100%;
 }
@@ -514,6 +528,16 @@ hr{
 .list-group-item > img{
 	height: 240px;
 	max-width: 100%;
+}
+.clnt .list-group-item{
+	text-align: center;
+}
+.clnt .list-group-item > img{
+	max-height: 150px;
+	margin:0px auto;
+}
+.clnt .list-group-item.active, .clnt .list-group-item.active:focus, .clnt .list-group-item.active:hover{
+	background-color: #0c3b6f;
 }
 .msgArea{
 	resize:vertical;
@@ -694,5 +718,12 @@ hr{
 	}
 	.addressLogo{
 		padding-top: 20px;
+	}
+	.innerTitle{
+		padding: 60px 0px;
+	}
+	.staticBanner2, .staticBanner3, .staticBanner4, .staticBanner5, .staticBanner6{
+		background-position: top;
+		background-size: 130%;
 	}
 }

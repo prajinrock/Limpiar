@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   
@@ -27,30 +29,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="images/lumina_logo.png"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/lumina_logo.png"></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Services</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="projects.html">Projects</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trading <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Clients</a></li>
+              <li><a href="trading.html">Trading</a></li>
+              <li><a href="clients.html">Clients</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li class="active"><a href="contact.html">Contact Us</a></li>
             </ul>
-            
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
@@ -63,16 +52,20 @@
             <div class="spacer"></div>
           </div>
           <div class="col-sm-5">
-            <form>
+            <form action='contactAction.php' method='post'>
               <h2 class="form-signin-heading">Quick Contact</h2>
               <div class="spacer2"></div>
-              <input type="name" id="" class="form-control" placeholder="Name" required autofocus>
+              <input type="name" id="" class="form-control" name="name" placeholder="Name" required autofocus>
               <div class="spacer2"></div>
-              <input type="email" id="" class="form-control" placeholder="Email address" required autofocus>
+              <input type="email" id="" class="form-control" name="email" placeholder="Email address" required>
               <div class="spacer2"></div>
-              <input type="text" id="inputPassword" class="form-control" placeholder="Phone" required>
+              <input type="text" id="" name="phone" class="form-control" placeholder="Phone" required>
               <div class="spacer2"></div>
-              <textarea class="form-control msgArea" placeholder="Message"></textarea>
+              <input type="subject" id="" class="form-control" name="subject" placeholder="Subject" required>
+              <div class="spacer2"></div>
+              <textarea class="form-control msgArea" name="message" placeholder="Message"></textarea>
+              <div class="spacer2"></div>
+              <div class="g-recaptcha" data-sitekey="6Lf6K34UAAAAAJ45mE0AgIkQvEcmYcL5UacwkKUS"></div>
               <div class="spacer2"></div>
               <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
               <div class="spacer2"></div>
@@ -116,9 +109,8 @@
         <h1>Quick Links</h1>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Services</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="#">Trading</a></li>
+          <li><a href="trading.html">Trading</a></li>
           <li><a href="about.html">About us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
