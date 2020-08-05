@@ -4,7 +4,7 @@
 
 if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
 
-    $secret = '6Lf6K34UAAAAAIT8LO2RMheSvO8atXah_rGuj7IQ';
+    $secret = '6Lc0tbcUAAAAAP13MRFwuyO-Gv_ITpwEo5_IyiUu';
 
     $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $_POST['g-recaptcha-response']);
 
@@ -38,13 +38,13 @@ if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response
 
 
 
-        $mail->setFrom('noreply@ui2k.com', $name);
+        $mail->setFrom('info@luminallc.com', $name);
 
 //        $mail->addAddress('musafar@codeatech.com');
 
 //        $mail->addCc('noushad@codeatech.com');
 
-        $mail->addAddress('prajinrock@gmail.com');
+        $mail->addAddress('info@luminallc.com');
 
         $mail->addReplyTo($email, $name);
 
